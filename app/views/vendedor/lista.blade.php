@@ -24,7 +24,7 @@
 		@endif
 		<div class="form-group">
 			{{Form::label('apellido', 'Apellido')}}
-			{{Form::text('apellido', Input::old('apellido'), array('class'=>'form-control','placeholder'=>'nombre vendedor', 'autocomplete'=>'off'))}}
+			{{Form::text('apellido', Input::old('apellido'), array('class'=>'form-control','placeholder'=>'apellido vendedor', 'autocomplete'=>'off'))}}
 		</div>
 		@if( $errors->has('apellido') )
 			<!-- Verificamos si hubo algún error en el campo -->

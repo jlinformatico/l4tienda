@@ -39,7 +39,7 @@ class Vendedor extends Eloquent  {
             $respuesta['mensaje'] = 'Vendedor creado!';
             $respuesta['error']   = false;
             $respuesta['data']    = $vendedor;
-        }    
+        }
         
         return $respuesta;
   }

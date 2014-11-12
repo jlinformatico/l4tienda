@@ -6,10 +6,10 @@ class VendedorController extends BaseController {
         // obtenemos todos los vendedores y los pasamos a la vista
         return View::make('vendedor.lista', array('vendedores' => $vendedores));
     }
- 
+
     public function crearVendedor(){
         
-        // llamamos a la función de agregar vendedor en el modelo y le pasamos los datos del formulario
+        //llamamos a la función de agregarvendedor del modelo y le pasamos datos del formulario
         $respuesta = Vendedor::agregarVendedor(Input::all());
         
         // Dependiendo de la respuesta del modelo
