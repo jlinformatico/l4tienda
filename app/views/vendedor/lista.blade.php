@@ -13,7 +13,7 @@
 			{{Form::label('nombre', 'Nombre')}}
 			{{Form::text('nombre', Input::old('nombre'), array('class'=>'form-control', 'placeholder'=>'nombre vendedor', 'autocomplete'=>'off'))}}
 		</div>
-		<!-- Verificamos si huboi algún error en el campo -->
+		<!-- Verificamos si hubo algún error en el campo -->
 		@if( $errors->has('nombre') )
 			<!-- En caso de que haya un error, entonces los imprimimos y utilizamos algún estilo de bootstrap -->
 			<div class="alert alert-danger">

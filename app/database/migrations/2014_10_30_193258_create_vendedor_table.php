@@ -9,12 +9,13 @@ class CreateVendedorTable extends Migration {
 	public function up()
 	{
 		
-		Schema::table('vendedor', function($table){
-       $table->create();
-       $table->increments('id'); //tipo de dato autoincrementable llamado id
-       $table->string('nombre');
-       $table->string('apellido');
-       $table->timestamps();
+		Schema::create('vendedor', function($table)
+		{
+	       $table->increments('id'); //tipo de dato autoincrementable llamado id
+	       $table->string('nombre');
+	       $table->string('apellido');
+	       $table->timestamps();
+		});
 	}
 
 	// el método down es para indicar que queremos revertir la migración
